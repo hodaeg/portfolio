@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html id="top">
+    <head>
+        <title>Levi Nellen // NASA Redesign Case Study</title>
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        <link href="CSS/featherlight.min.css" type="text/css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <div class="topnav">
+        <a href="./index.html" id="mobileLN">
+            <img class="mobileLogo" src="../homework18/images/LN.png"/>
+        </a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href ="./index.html" class="mobileNavLinkText"><h3>Work</h3></a>
+            <a href ="./about.html" class="mobileNavLinkText"><h3>About</h3></a>
+            <a href ="./contact.html" class="mobileNavLinkText"><h3>Contact</h3></a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <nav>
+        <a class="navLink" href ="./index.html"><img class="logo" src="../homework18/images/LN.png"></a>
+        <a href="#top"><h4 class="subHeadOff">Work / NASA.gov Redesign</h4></a>
+        <div class="csNavBar" id="test">
+            <ul class="csNavBarItems">
+                <li class="csCurrentPage"><a href="#top">Work</a></li>
+                <li><a href =about.html>About</a></li>
+                <li><a href =contact.html>Contact</a></li>
+            </ul>
+        </div>
+    </nav> 
+    <body>
+        <div class="csHeroContainer">
+            <div class="csHeroItem">
+                <h1>NASA.gov Redesign</h1>
+                <span class="caseStudySub">Case Study</span>
+            </div>
+        </div>
+        <div class="introContainer">
+            <div class="projectOverview">
+                <h3>Project Overview</h3>
+                <p>NASA, a United States icon, needs a website to match it's prestige. With this redesign, I looked to capture the wonder of space with the curiosity of its users.</p>
+            </div>
+            <div class="heroImage">
+                <img src="../homework20/images/NASA_Case_Hero.png"></img>
+            </div>
+            <div class="roleScope">
+                <h3>Role & Scope</h3>
+                <p>This redesign was an individual project for my UX/UI certification, so I handled <strong>research, ideation, design, testing,</strong> and <strong>prototyping.</strong> The project’s scope focused on the brand and home page redesign.</p>
+            </div>
+        </div>
+        <div class="caseStudyGrid">
+            <div class="csHeader">
+                <h1>Research & Definition</h1>
+            </div>
+            <div class="csItemA1">
+                <h2>Heuristic Analysis</h2>
+                <p>To gain an understanding of the current state of the NASA.gov website, I reviewed the home page using a heuristic analysis.</p>
+            </div>
+            <div class="csItemA2" style="margin:auto">
+                <img src ="images/nasa_desktop_icon.png" class="maxHeight">
+            </div>
+            <div class="csItemB1">
+                <a href="images/nasa_orig.png" data-featherlight><img src="images/nasa_orig.png"></a>
+            </div>
+            <div class="csItemB2">
+                <h2>User Testing</h2>
+                <p>To identify pain points and redesign opportunities, I observed users interact with the current iteration of NASA.gov via screen sharing software. Through this testing, I was able to begin formulating ideas for my re-design.</p>
+            </div>
+            <div class="csItemC1">
+                <h2>Comparative Analysis</h2>
+                <p>Although NASA may not have true competitors in a classical sense, I searched for insight and inspiration from other government agencies and space-related entities.</p>
+            </div>
+            <div class="csItemC2" style="margin:auto">
+                <img src="images/nasa_comparative.png" class="maxHeight">
+            </div>
+            <div class="csItemD1">
+                <a href="images/nasa_navanalysis.png" data-featherlight><img src="images/nasa_navanalysis.png"></a>
+            </div>
+            <div class="csItemD2">
+                <h2>Navigation Analysis</h2>
+                <p>From my user testing, it was clear the current NASA website was filled with useful information -- but it was difficult to navigate and find. I performed a navigation analysis to get to the root of the problem.</p>
+            </div>
+        </div>
+        <div class="caseStudyGrid" id="csGrid3">
+            <div class="csHeader">
+                <h1>Ideation</h1>
+            </div>
+            <div class="csItemA1">
+                <h2>Card Sort & Sitemap</h2>
+                <p>To gain an understanding of the current state of the NASA.gov website, I reviewed the home page using a heuristic analysis.</p>
+            </div>
+            <div class="csItemA2" id="csFlex">
+                <a href="images/nasa_cardsort_large.jpg" data-featherlight><img src="images/nasa_cardsort_tn.png"></a>
+                <a href="images/nasa_sitemap_hr.png" data-featherlight><img src="images/nasa_sitemap_tn.png"></a>
+            </div>
+            <div class="csItemB1">
+                <a href="images/nasa_fp_hr.jpg" data-featherlight><img src="images/nasa_featureprior.png"></a>
+            </div>
+            <div class="csItemB2">
+                <h2>Feature Prioritization Matrix</h2>
+                <p>Through my research and user persona, I began coming up with ideas for the redesign. and asking the two important questions:</p>
+                <ol>
+                    <li>What was important to the user?</li>
+                    <li>What was important to NASA?</li>
+                </ol>
+            </div>
+            <div class="csItemC1">
+                <h2>Brand Refresh</h2>
+                <p>The NASA ‘Worm’ logo, the red and stylish logo introduced in 1975, is making a comeback -- and I felt it was a perfect opportunity to put it to work on the website redesign.</p>
+                <span class="spacer"></span>
+                <p>Using the worm logo as a basis, I developed a style tile to help guide my redesign.</p>
+            </div>
+            <div class="csItemC2">
+                <a href="images/nasa_styletile.png" data-featherlight><img src="images/nasa_styletile_tn.png"></a>
+            </div>
+        </div>
+        <div class="caseStudyGrid" id="csGrid5">
+            <div class="csHeader">
+                <h1>Prototyping & User Testing</h1>
+            </div>
+            <div class="csItemA1" id="csFlex">
+                <div class="csCard">
+                    <img src="images/nav_early.png" style="width:100%">
+                    <div class="csCardContainer">
+                        <h5>Early version of navigation.</h5>
+                    </div>
+                </div>
+                <div class="csCard">
+                    <img src="images/nav_final.png" style="width:100%">
+                    <div class="csCardContainer">
+                        <h5>Final version of navigation.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="csItemA2">
+                <h2>Navigation Wireframe</h2>
+                <p>Due to the immense amount of information and content on the NASA website, the navigation needed to be able to scale for the future while being robust enough to handle the current site-map.</p>
+                <span class="spacer"></span>
+                <p>I settled on side navigation, as it was easily-scalable to mobile and accounted for future growth.</p>
+            </div>
+            <div class="csItemB1" class="margin">
+                <h2>Initial Homepage Prototypes</h2>
+                <p>Due to the immense amount of information and content on the NASA website, the navigation needed to be able to scale for the future while being robust enough to handle the current site-map.</p>
+            </div>
+            <div class="csItemC1" style="margin:auto">
+                <a href="images/nasa_system.png" data-featherlight><img src="images/nasa_system.png" class="csG5img"></a>
+            </div>
+            <div class="csItemC2" style="margin:auto">
+                <a href="images/nasa_illustrated.png" data-featherlight><img src="images/nasa_illustrated.png" class="csG5img"></a>
+            </div>
+            <div class="csItemD1">
+                <img src="images/nasa_doom.png">
+            </div>
+            <div class="csItemD2" style="padding-left: 3%">
+                <h2>User Testing</h2>
+                <p>After an initial round of design, I began user testing the redesign. The tests were short, but I encouraged users to speak their mind.</p>
+                <span class="spacer"></span>
+                <p>In observing the tests, it was clear the design needed a slight course-correction back to space.</p>
+            </div>
+            <div class="csItemE1">
+                <h2>Responsive Prototypes</h2>
+                <p>Always designing with mobile in mind, the components and navigation were easily transferable to a mobile layout.</p>
+            </div>
+            <div class="csItemE2">
+                <a href="images/nasa_responsive.png" data-featherlight><img src="images/nasa_responsive.png"></a>
+            </div>
+        </div>
+        <div class="finalDesign">
+            <div class="fdHeader">
+                <h1>Final Design</h1>
+            </div>
+            <div class="fdImages">
+                <img src="images/nasa_desktop.png">
+                <img src="images/nasa_mobile.png">
+            </div>
+        </div>
+        <div class="csFooter">
+                <div class="csFooterItem">
+                    <h2>Resources</h2>
+                    <a href="../homework20/images/NASA_styleguide.png" target="_blank"><button class="blackButton" >NASA Design System</button></a>
+                    <a href="https://www.figma.com/proto/0RKWDtZSJ3qIxFEMvTUMyX/UXUIBootcamp?page-id=323%3A15989&node-id=409%3A1825&viewport=260%2C1020%2C0.015625&scaling=min-zoom&starting-point-node-id=409%3A1825&show-proto-sidebar=1" target="_blank" rel="noopener noreferrer""><button class="blackButton" >Figma Prototype</button></a>
+                </div>
+                <div id="csFooterItem">
+                    <h2 id="red">More Work</h2>
+                        <div class="csFooterMoreWorkBucket">
+                            <a href="../homework21/encorecasestudy.html"><div class="moreWorkCardContainerEncore">
+                                <h3 id="mwH3">Encore</h3>
+                            </div></a>
+                            <!--<a href="../homework21/govotecasestudy.html"><div class="moreWorkCardContainerGoVote">
+                                <h3 id="mwH3">GoVote</h3>
+                            </div></a>-->
+                        </div>
+                </div>
+        </div>
+    </body>
+    <footer>
+        <div class="footerContainer">
+                <img id="footerContact" src="images/contact.png">
+                <a href="https://www.linkedin.com/in/levi-nellen/"><button class="button" id="footerLink">Linked In</button></a>
+                <a href="mailto:nellenlevi@gmail.com"><button class="button" id="footerLink">E-Mail</button></a>
+            <p id="footer">Levi Nellen | 2021 | Copyright All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/casestudy.js"></script>
+    <script src="../homework21/js/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+</html>

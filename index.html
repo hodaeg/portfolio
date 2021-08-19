@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html id="top">
+    <head>
+        <title>Levi Nellen: Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <div class="topnav">
+        <a href="./index.html" id="mobileLN">
+            <img class="mobileLogo" src="../homework18/images/LN.png"/>
+        </a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href ="./index.html" class="mobileNavLinkText"><h3>Work</h3></a>
+            <a href ="./about.html" class="mobileNavLinkText"><h3>About</h3></a>
+            <a href ="./contact.html" class="mobileNavLinkText"><h3>Contact</h3></a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <nav>
+        <div id="navContainer">
+        </div>
+        <div class="navBar">
+            <ul class="navBarItems">
+                <li id="currentPage"><a href="#top">Work</a></li>
+                <li><a href =about.html>About</a></li>
+                <li><a href =contact.html>Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <body>
+        <section class="heroContainer">
+            <div class="heroItems">
+                <img class="hero" src="../homework21/images/LNHero.png">
+                <h2 id="subtitle">A <span id="red">user interface and experience designer</span> based out of St. Paul, MN that enjoys making digital things that people like to use.</h2>
+                <a href ="#nasa" class="scrollIcon"><img src="../homework21/images/scroll.svg"></a>
+            </div>
+        </section>
+        <h1 class="selectedWorks" id="red">Selected Works</h1>
+        <section class="workContainer" id="nasa">
+            <div class="workItemsContainer">
+                <div class="workItem">
+                    <img src="../homework21/images/nasahero.png">
+                </div>
+                <div id="workItemCopy">
+                    <h2>NASA.GOV Redesign</h2>
+                    <div class="redBar"></div>
+                    <p class="workDesc">NASA, a United States icon, needs a website to match it's prestige. With this redesign, I looked to capture the wonder of space with the curiosity of its users.</p>
+                    <a href="../homework21/nasacasestudy.html"><button class="button">Case Study</button></a>
+                </div>
+            </div>
+            <div class="workItemsContainer">
+                <div class="workItem">
+                    <img src="../homework21/images/encorehero.png">
+                </div>
+                <div id="workItemCopy">
+                    <h2>Encore</h2>
+                    <div class="redBar"></div>
+                    <p class="workDesc">Encore is a mobile application designed to marry travel, music, and community to promote budding music scenes, locations, and artists.</p>
+                    <a href="../homework21/encorecasestudy.html"><button class="button">Case Study</button></a>
+                </div>
+            </div>
+            <div class="workItemsContainer">
+                <div class="workItem">
+                    <img src="../homework21/images/govote.png">
+                </div>
+                <div id="workItemCopy">
+                    <h2>GoVote!</h2>
+                    <div class="redBar"></div>
+                    <p class="workDesc">What if US citizens could vote via an app? This project was an attempt to answer that question by giving voters the information and tools they need to make informed choices.	</p>
+                    <button class="button" id="inactive">Case Study</button>
+                </div>
+            </div>
+        </section>    
+    </body>
+    <footer>
+        <div class="footerContainer">
+                <img id="footerContact" src="images/contact.png">
+                <a href="https://www.linkedin.com/in/levi-nellen/"><button class="button" id="footerLink">Linked In</button></a>
+                <a href="mailto:nellenlevi@gmail.com"><button class="button" id="footerLink">E-Mail</button></a>
+            <p id="footer">Levi Nellen | 2021 | Copyright All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/default.js"></script>
+</html>
