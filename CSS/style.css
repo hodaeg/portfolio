@@ -16,7 +16,7 @@ body {
     background-image: url(../images/home2bg_smooth.png);
     background-attachment: scroll;
     background-position: top;
-    background-size: auto;
+    background-size: cover;
     background-repeat: repeat-y;
     font-family: 'Darker Grotesque', sans-serif;
     margin: 0;
