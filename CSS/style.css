@@ -226,6 +226,11 @@ ol {
   background: linear-gradient(175deg, rgba(255,61,0,1) 0%, rgba(255,153,0,1) 100%);
 }
 
+#gvHero {
+  background: rgb(0, 71, 138);
+  background: linear-gradient(175deg, rgba(0, 71, 138,1) 0%, rgb(0, 132, 255) 100%);
+}
+
 .csHeroItem {
   display: flex;
   flex-direction: column;
