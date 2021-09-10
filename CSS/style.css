@@ -228,7 +228,7 @@ ol {
 
 #gvHero {
   background: rgb(0, 71, 138);
-  background: linear-gradient(175deg, rgba(0, 71, 138,1) 0%, rgb(0, 132, 255) 100%);
+  background: linear-gradient(175deg,#2B3668 0%, #4b5eb3 100%);
 }
 
 .csHeroItem {
@@ -338,6 +338,18 @@ ol {
   ". csItemE1 csItemE2 .";
 }
 
+#csGrid3Research {
+  grid-template-rows: 15vh .6fr .2fr .4fr .2fr .2fr 1fr;
+  grid-template-areas:
+  "csHeader csHeader csHeader csHeader"
+  ". csItemA1 csItemA2 ."
+  ". csItemD1 csItemD1 ."
+  ". csItemD2 csItemD2 ."
+  ". csItemB1 csItemB1 ."
+  ". csItemB2 csItemB2 ."
+  ". csItemC1 csItemC2 ."
+}
+
 #csGrid5EncoreIdeation {
   grid-template-rows: 15vh 1fr 1fr .7fr auto auto;
   grid-template-areas:
@@ -347,6 +359,15 @@ ol {
   ". csItemC1 csItemC2 ."
   ". csItemD1 csItemD1 ."
   ". csItemD2 csItemD2 .";
+}
+
+#csGrid5gvIdeation {
+  grid-template-rows: 15vh .5fr auto .7fr;
+  grid-template-areas:
+  "csHeader csHeader csHeader csHeader"
+  ". csItemA1 csItemA2 ."
+  ". csItemB1 csItemB2 ."
+  ". csItemC1 csItemC1 .";
 }
 
 #csGrid5EncorePrototyping {
@@ -387,6 +408,32 @@ ol {
 .csFooterMoreWorkBucket{
   display: flex;
   column-gap: 3%;
+}
+
+.csGVcontainer {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  column-gap: 2.5%;
+  margin-bottom: 5%;
+}
+
+.csGVcontainer img {
+  max-width: 80%;
+  width: 50%;
+  max-height: 231px;
+  align-self: center;
+}
+
+.csGVcontainer h3 p {
+  text-align: center;
+}
+
+.csGVitem {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2em;
+  max-width: 33%;
 }
 
 .caseStudyGrid Li {
