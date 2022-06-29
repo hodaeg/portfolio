@@ -715,7 +715,7 @@ ol {
 .fdCopyContainerEncore p {
   color: white;
   font-weight: 500;
-  font-size: calc(1em + 1.5vw);
+  font-size: calc(1em + 1vw);
   line-height: 1.1;
 }
 
