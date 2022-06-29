@@ -37,24 +37,28 @@ body {
 
 
 nav {
-  transition: 0.1s;
   position: sticky;
   top: 0px;
   display: flex;
   font-family: 'Darker Grotesque', sans-serif;
   overflow: none;
-  margin: 0;
+  margin: auto;
   justify-content: space-between;
   z-index: 10;
+  max-width: 1100px;
+  padding-top: 2vh;
 }
 
 .scrolled {
-  transition: .1s;
-  border-bottom: 1px #454545;
-  background-color: rgba(255, 255, 255, 0.98);
-  box-shadow: -1px -9px 15px 9px rgba(0,0,0,0.29);
-  -webkit-box-shadow: -1px -9px 15px 9px rgba(0,0,0,0.29);
-  -moz-box-shadow: -1px -9px 15px 9px rgba(0,0,0,0.29);
+  background: radial-gradient(252.17% 252.17% at 50% 50%, #FFFFFF 0%, #F1F1F1 100%);
+  border-bottom: 2px solid #DD0000;
+  box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.1), inset 0px 0px 10px rgba(0, 0, 0, 0.05);
+  max-width: unset;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20%;
+  padding-left: 20%;
+  padding-top: unset;
 }
 
 .csScrolled {
@@ -76,11 +80,9 @@ nav {
     width: auto;
     height: auto;
     margin-top: 2%;
-    margin-left: 10vw;
 }
 
 .scrolledLogo {
-  transition: .1s;
   margin-top: 2%;
 }
 
@@ -88,7 +90,6 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 10%;
     font-family: Darker Grotesque;
     font-weight: 300;
     color: #454545;
@@ -98,11 +99,15 @@ nav {
     margin-bottom: 1%;
 }
 
+#footerContainerContact {
+  position: absolute;
+  bottom: 2vh;
+}
+
 .csNavBar {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 10%;
   font-family: Darker Grotesque;
   font-weight: 300;
   color: white;
@@ -113,14 +118,14 @@ nav {
 }
 
 .csScrolledTxt {
-  font-size: 1em;
-  font-weight: 500;
+  font-size: .8em;
+  font-weight: 400;
   color: #454545;
 }
 
 .scrolledTxt {
-  font-weight: 500;
-  color: #454545;
+  font-size: 2em;
+  font-weight: 400;
 }
 
 .subHeadOff {
@@ -130,8 +135,9 @@ nav {
 .subHeadOn {
   display: flex;
   color: #454545;
-  padding-top: 7%;
   font-weight: 500;
+  line-height: 0;
+  padding-bottom: 1vh;
 }
 
 .navBarItems {
@@ -189,13 +195,12 @@ nav {
 
 .hoverUp {
   transition: .3s;
-  color:#DD0000;
   transform: translateY(-1vh)
 }
 
 .hoverDown {
   transition: .3s;
-  color:#454545;
+  color: #454545;
   transform: translateY(0vh)
 }
 
@@ -231,19 +236,23 @@ ol {
   background: linear-gradient(175deg,#2B3668 0%, #4b5eb3 100%);
 }
 
+#gvHero > h1 {
+  color:white;
+}
+
 .csHeroItem {
   display: flex;
   flex-direction: column;
   justify-content: left;   
   height: 100%;
   width: 100%;
-  margin-left: 10%;
-  margin-right: 10%;
+  max-width: 1100px;
+  margin: auto;
 }
 
 .h1Time {
   font-family: TimeMachine;
-  font-size: calc(1em + 15vw);
+  font-size: calc(1em + 11vw);
   line-height: 1;
   color:#DD0000;
   text-align: center;
@@ -261,15 +270,17 @@ ol {
 
 .introContainer {
   display: grid;
-  grid-template-columns: 10% 1fr 0.5fr 10%;
+  grid-template-columns:1fr 0.5fr;
   grid-template-rows: auto auto;
   padding-top: 18%;
   padding-bottom: 3%;
+  max-width: 1100px;
+  margin: auto;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    ". projectOverview heroImage ."
-    ". roleScope roleScope .";
+    "projectOverview heroImage"
+    "roleScope roleScope";
 }
 
 .projectOverview { 
@@ -305,49 +316,51 @@ ol {
 
 .caseStudyGrid {
   display: grid;
-  grid-template-columns: 10% 1fr 1fr 10%;
+  grid-template-columns:1fr 1fr;
   grid-template-rows: 15vh 1fr 1fr 1fr 1fr;
-  margin-bottom: 6vh;
+  padding-bottom: 3vh;
+  max-width: 1100px;
+  margin: auto;
   row-gap: 3vh;
   grid-auto-flow: row;
   grid-template-areas:
-    "csHeader csHeader csHeader csHeader"
-    ". csItemA1 csItemA2 ."
-    ". csItemB1 csItemB2 ."
-    ". csItemC1 csItemC2 ."
-    ". csItemD1 csItemD2 .";
+    "csHeader csHeader"
+    "csItemA1 csItemA2"
+    "csItemB1 csItemB2"
+    "csItemC1 csItemC2"
+    "csItemD1 csItemD2";
 }
 
 #csGrid3 {
   grid-template-rows: 15vh auto auto 1fr 1fr;
   grid-template-areas:
-    "csHeader csHeader csHeader csHeader"
-    ". csItemA1 csItemA1 ."
-    ". csItemA2 csItemA2 ."
-    ". csItemB1 csItemB2 ."
-    ". csItemC1 csItemC2 .";
+    "csHeader csHeader"
+    "csItemA1 csItemA1"
+    "csItemA2 csItemA2"
+    "csItemB1 csItemB2"
+    "csItemC1 csItemC2";
 }
 
 #csGrid5 {
   grid-template-rows: 15vh 1fr .5fr .5fr 1fr 1fr;
   grid-template-areas:
-  "csHeader csHeader csHeader csHeader"
-  ". csItemA1 csItemA2 ."
-  ". csItemB1 csItemB1 ."
-  ". csItemC1 csItemC2 ."
-  ". csItemD1 csItemD2 ."
-  ". csItemE1 csItemE2 .";
+  "csHeader csHeader"
+  "csItemA1 csItemA2"
+  "csItemB1 csItemB1"
+  "csItemC1 csItemC2"
+  "csItemD1 csItemD2"
+  "csItemE1 csItemE2";
 }
 
 #csGrid5Encore {
   grid-template-rows: 15vh .2fr .2fr 1fr 1fr 1fr;
   grid-template-areas:
-  "csHeader csHeader csHeader csHeader"
-  ". csItemA1 csItemA2 ."
-  ". csItemB1 csItemB2 ."
-  ". csItemC1 csItemC2 ."
-  ". csItemD1 csItemD2 ."
-  ". csItemE1 csItemE2 .";
+  "csHeader csHeader"
+  "csItemA1 csItemA2"
+  "csItemB1 csItemB2"
+  "csItemC1 csItemC2"
+  "csItemD1 csItemD2"
+  "csItemE1 csItemE2";
 }
 
 #csGrid3Research {
@@ -365,65 +378,66 @@ ol {
 #csGrid3ResearchGV {
   grid-template-rows: 15vh 1fr .3fr .6fr .5fr .5fr 1fr;
   grid-template-areas:
-  "csHeader csHeader csHeader csHeader"
-  ". csItemA1 csItemA2 ."
-  ". csItemD1 csItemD1 ."
-  ". csItemD2 csItemD2 ."
-  ". csItemB1 csItemB1 ."
-  ". csItemB2 csItemB2 ."
-  ". csItemC1 csItemC2 ."
+  "csHeader csHeader"
+  "csItemA1 csItemA2"
+  "csItemD1 csItemD1"
+  "csItemD2 csItemD2"
+  "csItemB1 csItemB1"
+  "csItemB2 csItemB2"
+  "csItemC1 csItemC2"
 }
 
 #csGrid5EncoreIdeation {
   grid-template-rows: 15vh 1fr 1fr .7fr auto auto;
   grid-template-areas:
-  "csHeader csHeader csHeader csHeader"
-  ". csItemA1 csItemA2 ."
-  ". csItemB1 csItemB2 ."
-  ". csItemC1 csItemC2 ."
-  ". csItemD1 csItemD1 ."
-  ". csItemD2 csItemD2 .";
+  "csHeader csHeader"
+  "csItemA1 csItemA2"
+  "csItemB1 csItemB2"
+  "csItemC1 csItemC2"
+  "csItemD1 csItemD1"
+  "csItemD2 csItemD2";
 }
 
 #csGrid5gvIdeation {
   grid-template-rows: 15vh .5fr auto .7fr;
   grid-template-areas:
-  "csHeader csHeader csHeader csHeader"
-  ". csItemA1 csItemA2 ."
-  ". csItemB1 csItemB2 ."
-  "csHeaderDup csHeaderDup csHeaderDup csHeaderDup";
+  "csHeader csHeader"
+  "csItemA1 csItemA2"
+  "csItemB1 csItemB2"
+  "csHeaderDup csHeaderDup";
 }
 
 #csGrid5EncorePrototyping {
   grid-template-rows: 15vh .5fr auto .5fr .2fr auto 1fr;
   grid-template-areas:
-  "csHeader csHeader csHeader csHeader"
-  ". csItemA1 csItemA2 ."
-  ". csItemB1 csItemB1 ."
-  ". csItemB2 csItemB2 ."
-  ". csItemC1 csItemC1 ."
-  ". csItemC2 csItemC2 ."
-  ". csItemD1 csItemD2 .";
+  "csHeader csHeader"
+  "csItemA1 csItemA2"
+  "csItemB1 csItemB1"
+  "csItemB2 csItemB2"
+  "csItemC1 csItemC1"
+  "csItemC2 csItemC2"
+  "csItemD1 csItemD2";
 }
 
 #csGrid5GVPrototyping {
   grid-template-rows: 15vh auto .3fr .5fr auto 1fr;
   grid-template-areas:
-  "csHeader csHeader csHeader csHeader"
-  ". csItemA1 csItemA1 ."
-  ". csItemA2 csItemA2 ."
-  ". csItemB1 csItemB1 ."
-  ". csItemB2 csItemB2 ."
-  ". csItemC1 csItemC2 .";
+  "csHeader csHeader"
+  "csItemA1 csItemA1"
+  "csItemA2 csItemA2"
+  "csItemB1 csItemB1"
+  "csItemB2 csItemB2"
+  "csItemC1 csItemC2";
 }
 
 #csGrid5GVBias {
   grid-template-rows: 15vh 1fr 1fr 1fr;
+  padding-bottom: 2vh;
   grid-template-areas:
-  "csHeader csHeader csHeader csHeader"
-  ". csItemA1 csItemA2 ."
-  ". csItemB1 csItemB2 ."
-  ". csItemC1 csItemC2 .";
+  "csHeader csHeader"
+  "csItemA1 csItemA2"
+  "csItemB1 csItemB2"
+  "csItemC1 csItemC2";
 }
 
 #csGrid5GVBias ul {
@@ -465,10 +479,11 @@ ol {
 
 .csGVcontainer {
   display: flex;
-  margin-left: 10%;
-  margin-right: 10%;
   column-gap: 2.5%;
-  margin-bottom: 5%;
+  max-width: 1100px;
+  margin: auto;
+  padding-bottom: 3vh;
+  padding-top: 3vh;
 }
 
 .csGVcontainer img {
@@ -505,21 +520,25 @@ ol {
   margin-bottom: auto;
   width: 100%;
   text-align: center;
+  border-radius: 5px;
+}
+
+.csHeader > h1 {
+  line-height: unset;
+  color: white;
 }
 
 .csHeaderDup { 
   grid-area: csHeaderDup;
   background-color: #dd0000;
   background-image: linear-gradient(135deg, #dd0000 0%, #820000 100%);
-  padding-bottom: 1%;
+  padding-bottom: 2vh;
   margin-top: auto;
   margin-bottom: auto;
   width: 100%;
   text-align: center;
-}
-
-.csHeaderDup H1 {
-  color: white;
+  border-radius: 5px;
+  line-height: 0;
 }
 
 .maxHeight {
@@ -532,10 +551,6 @@ ol {
 
 .maxHeight500 {
   max-height: 500px;
-}
-
-.csHeader h1 {
-  color: white;
 }
 
 .csItemA1 { 
@@ -637,21 +652,29 @@ ol {
 
 .finalDesign {
   display: grid;
-  grid-template-columns: 10% 1fr 10%;
+  grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
   gap: 0px 0px;
   padding-bottom: 10vh;
   background-color: #000000;
   background-image: linear-gradient(180deg, #000000 23%, #181818 100%);
   grid-template-areas:
-    ". fdHeader ."
-    ". fdImages .";
+    "fdHeader"
+    "fdImages";
 }
 
 .finalDesignEncore {
   display: flex;
   justify-content: space-between;
   padding-bottom: 20px;
+  
+}
+
+.fdContainer {
+  display: flex;
+  max-width: 1100px;
+  margin: auto;
+  justify-content: space-between
 }
 
 .fdCopyContainer {
@@ -678,7 +701,6 @@ ol {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 10%;
   width: 50%;
 }
 
@@ -727,6 +749,7 @@ ol {
   grid-area: fdImages;
   display: flex;
   justify-content: space-evenly;
+  grid-column-gap: 2vw;
 }
 
 .fdImages img {
@@ -753,11 +776,11 @@ ol {
 
 .csFooter {
   display: flex;
-  margin-left: 10%;
   column-gap: 5%;
   flex-direction: row;
-  margin-bottom: 10vh;
-  margin-top: 5vh;
+  max-width: 1100px;
+  margin: auto;
+  padding-bottom: 10vh;
 }
 
 .csFooterItem {
@@ -772,7 +795,7 @@ ol {
   linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0)),
   url('../images/encore_city.png');
   width: 15vw;
-  height: 45vh;
+  height: 30vh;
   margin-top: 3vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -802,7 +825,7 @@ ol {
   linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0)),
   url('../images/nasa_home.png');
   width: 15vw;
-  height: 45vh;
+  height: 30vh;
   margin-top: 3vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -843,7 +866,7 @@ ol {
   linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0)),
   url('../images/govote_home.png');
   width: 15vw;
-  height: 45vh;
+  height: 30vh;
   margin-top: 3vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -878,8 +901,8 @@ ol {
     flex-direction: row;
     justify-content: center;
     padding-top: 8%;   
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: auto;
+    max-width: 1100px;
     height: 100%;
     margin-bottom: 5%;
 }
@@ -895,19 +918,18 @@ ol {
 .screens {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+  max-width: 1100px;
+  margin: auto;
   row-gap: 5vh;
   justify-content: center;
+  padding-bottom: 10vh;
 }
 
 .screensGV {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+  max-width: 1100px;
+  margin: auto;
   justify-content: space-between;
 }
 
@@ -932,11 +954,10 @@ ol {
 .workContainer {
     display: flex;
     flex-direction: column;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5%;
-    margin-bottom: 10%;
     row-gap: 15vh;
+    margin: auto;
+    max-width: 1100px;
+    padding-bottom: 10vh;
 }
 
 .workItemsContainer {
@@ -954,7 +975,7 @@ ol {
 }
 
 .selectedWorks {
-  margin-left: 10%;
+  margin-top:10vh;
 }
 
 .scrollIcon {
@@ -1038,7 +1059,7 @@ h5 {
 }
 
 p {
-  font-size: calc(1em + 1.3vw);
+  font-size: calc(1em + 1.1vw);
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -1075,7 +1096,9 @@ p {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 5%;
+    margin:0;
+    bottom: 2vh;
+    position: relative;
 }
 
 #footerContact {
@@ -1127,6 +1150,7 @@ a {
   font-size: calc(1em + .5vw);
   margin-top: 0;
   font-weight: 700;
+  cursor: pointer;
 }
 
 #inactive {
@@ -1188,24 +1212,16 @@ a {
 }
 
 .contactPage {
-    display: grid; 
-    grid-template-columns: 10% 80% 10%; 
-    grid-template-rows: 0.6fr 1.4fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      ". Contact-Hero ."
-      ". Contact-Copy ."; 
-    width: 100%; 
-    height: 100%; 
-    margin-bottom: 15%;
-}
-
-.Contact-Hero { 
-    grid-area: Contact-Hero;
+    display: flex; 
+    max-width: 1100px;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40vh;
 }
 
 #subHero {
-    width: 40vw;
+    width: 20vw;
     height: auto;
     padding-top: 2%;
 }
@@ -1213,15 +1229,11 @@ a {
 #subHeroAbout {
   width: 25vw;
   height: auto;
-  padding-top: 2%;
-  margin-left: 10%;
+  padding-bottom: 5%;
 }
 
 .Contact-Copy { 
-    grid-area: Contact-Copy;
     text-align: center;
-    position: relative;
-    margin-top: 10%;
 }
 
 #contactButtonRight {
@@ -1342,8 +1354,8 @@ a {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1.2fr 1fr;
     gap: 0px 0px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: auto;
+    max-width: 1100px;
   }
   
   .aboutIntroContainer { grid-area: 1 / 1 / 2 / 3; }
@@ -1352,7 +1364,8 @@ a {
     grid-area: 1 / 2 / 2 / 3;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
+    margin-top: 12vh;
   }
   
   .aboutCopy { 
@@ -1363,7 +1376,6 @@ a {
 
   .Competancies { 
     grid-area: 2 / 1 / 3 / 3;
-    padding: 0% 5% 0% 5%;
     margin-bottom: 5%;
   }
   
@@ -1371,7 +1383,7 @@ a {
     display: flex;
     width: auto;
     justify-content: flex-start;
-    row-gap: 5vw;
+    row-gap: 2vw;
     column-gap: 2.5vh;
     flex-wrap: wrap;
     margin-top: 3vh;
@@ -1476,14 +1488,20 @@ a {
     padding-top: 3vh;
     padding-bottom: 3vh;
     margin-bottom: 10vh;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 5px;
+    max-width: 1100px;
   }
   
   .timelineContainer {
     display: flex;
     flex-direction: column;
     width: auto;  
-    padding: 0% 10% 5% 10%;
+    padding-bottom: 5%;
     gap: 5vh;
+    margin: auto;
+    max-width: 1100px;
   }
   
   .timelineItem {
@@ -1612,7 +1630,77 @@ a {
     opacity: 1;
   }
 }
+@media only screen and (max-width: 1200px) {
+  .timelineContainer {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .aboutContainer {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 
+  .heroContainer {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .workContainer {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .workItem img {
+    max-width: 400px;
+  }
+
+  .introContainer {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .csHeroItem {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 5%;
+  }
+
+  .caseStudyGrid {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .fdContainer {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .csFooter {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .csGVcontainer {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .screensGV {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .contactPage {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  nav {
+    max-width: unset;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
 @media only screen and (max-width: 800px) {
   nav {
     display: none;
@@ -1646,8 +1734,6 @@ a {
   border-bottom: 3px solid #DD0000;
   background-color: white;
   box-shadow: -1px -9px 24px 18px rgba(0,0,0,0.29);
-  -webkit-box-shadow: -1px -9px 24px 18px rgba(0,0,0,0.29);
-  -moz-box-shadow: -1px -9px 24px 18px rgba(0,0,0,0.29);
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
@@ -1710,6 +1796,10 @@ a {
   text-align: center;
 }
 
+.fdContainer {
+  margin-left: 5%;
+}
+
 #workItemCopy {
   text-align: center;
   margin-bottom: 10%;
@@ -1738,14 +1828,13 @@ a {
 #subHeroAbout {
   width: 40%;
   padding-top: 20%;
-  margin-left: 5%;
 }
 
 .aboutContainer {
   display: flex;
   flex-direction: column;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 .CompetanciesSlider {
@@ -1762,20 +1851,19 @@ a {
 }
 
 .timelineContainer {
-  margin-bottom: 15%;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  margin-bottom: 10vh;
 }
 
 .aboutSkills {
   margin-bottom: 5vh;
+  margin-top: 2vh;
 }
 
 .Competancies {
-  margin: 0% 0% 10% 0%;
+  margin: 0% 0% 15% 0%;
   padding: 0;
-}
-
-.aboutCopy {
-  padding: 5% 0% 5% 0%;
 }
 
 .contactPage {
@@ -1825,11 +1913,6 @@ a {
 .skillsContainer {
   row-gap: 10px;
   column-gap: 10px;
-}
-
-.selectedWorks {
-  margin-left: 10%;
-  margin-bottom: 10%;
 }
 
 .competancyBlock {
@@ -1989,6 +2072,11 @@ a {
   margin-left: 2.5%;
   margin-right: 2.5%;
 }
+
+.csHeaderDup h1 {
+  font-size: 2em;
+}
+
 
 .csGVcontainer img {
   width: 40%;
@@ -2174,6 +2262,7 @@ a {
 
 .csHeroItem {
   padding-bottom: 7%;
+  padding-left: 5%;
 }
 
 .h1Time {
@@ -2182,7 +2271,7 @@ a {
 }
 
 .csFooterItem {
-  gap: unset;
+  gap: 5px;
   margin-bottom: 5px;
 }
 
@@ -2248,6 +2337,7 @@ a {
   margin-left: 2.5%;
   margin-right: 2.5%;
   width: unset;
+  justify-content: space-evenly;
 }
 
 .maxHeight500 {
@@ -2270,7 +2360,7 @@ a {
 }
 
 .fdImagesEncore img {
-  max-height: 500px;
+  max-height: 320px;
 }
 
 .fdHeaderEncore {
