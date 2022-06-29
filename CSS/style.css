@@ -238,6 +238,7 @@ ol {
 
 #gvHero > h1 {
   color:white;
+  font-size: calc(1em + 3vw);
 }
 
 .csHeroItem {
@@ -521,11 +522,13 @@ ol {
   width: 100%;
   text-align: center;
   border-radius: 5px;
+  line-height: 1;
 }
 
 .csHeader > h1 {
-  line-height: unset;
   color: white;
+  font-size: calc(1em + 3vw);
+  line-height: 1.5;
 }
 
 .csHeaderDup { 
@@ -538,7 +541,7 @@ ol {
   width: 100%;
   text-align: center;
   border-radius: 5px;
-  line-height: 0;
+  line-height: 1.5;
 }
 
 .maxHeight {
