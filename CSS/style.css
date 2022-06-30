@@ -12,6 +12,18 @@ a, a:hover, a:focus, a:active {
     color: inherit;
 }
 
+.links {
+  text-decoration:underline;
+  text-decoration-color:#1c49dd;
+  color: #1c49dd;
+}
+
+.links:hover {
+  text-decoration:underline;
+  text-decoration-color:#0092cc;
+  color:#0092cc;
+}
+
 body {
     background-image: url(../images/home2bg_smooth.png);
     background-attachment: scroll;
@@ -231,6 +243,11 @@ ol {
   background: linear-gradient(175deg, rgba(255,61,0,1) 0%, rgba(255,153,0,1) 100%);
 }
 
+#a3Hero {
+  background: rgb(42,65,162);
+  background: linear-gradient(45deg, rgba(42,65,162,1) 14%, rgb(110, 179, 121) 100%);
+}
+
 #gvHero {
   background: rgb(0, 71, 138);
   background: linear-gradient(175deg,#2B3668 0%, #4b5eb3 100%);
@@ -253,7 +270,7 @@ ol {
 
 .h1Time {
   font-family: TimeMachine;
-  font-size: calc(1em + 11vw);
+  font-size: calc(1em + 10vw);
   line-height: 1;
   color:#DD0000;
   text-align: center;
@@ -277,7 +294,7 @@ ol {
   padding-bottom: 3%;
   max-width: 1100px;
   margin: auto;
-  gap: 0px 0px;
+  row-gap: 10px;
   grid-auto-flow: row;
   grid-template-areas:
     "projectOverview heroImage"
@@ -362,6 +379,69 @@ ol {
   "csItemC1 csItemC2"
   "csItemD1 csItemD2"
   "csItemE1 csItemE2";
+}
+
+#csGrid5a3 {
+  grid-template-rows: unset;
+  grid-template-areas:
+  "csHeader csHeader"
+  "csItemA1 csItemA1"
+  "csItemB1 csItemB2";
+}
+
+#a3b1 {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  row-gap: 2vh;
+}
+.csItemA1 > ul {
+  list-style: circle;
+  font-size: calc(1em + .8vw);
+}
+#csGrid5a3Ideation {
+  grid-template-rows: unset;
+  grid-template-areas:
+  "csItemA1 csItemA1"
+  "csItemB1 csItemB1"
+  "csItemC1 csItemC1";
+}
+
+.problemStatement {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-right: 4vh;
+  padding-left: 4vh;
+  background-color: #d7e5ef;
+  color:#2B3668;
+  border-radius: 5px;
+  margin-top: 5vh;
+}
+
+.problemStatement > h2 {
+  text-decoration:underline;
+  text-decoration-thickness:3px;
+}
+
+.problemStatement > h3 {
+  font-weight: 400;
+}
+
+.csItemB1 > ol {
+  font-size: calc(1em + .8vw);
+}
+
+#csGrid5a3Prototyping {
+  grid-template-rows: unset;
+  grid-template-areas:
+  "csHeader csHeader"
+  "csItemA2 csItemA2"
+  "csItemB1 csItemB2"
+  "csItemC1 csItemC1"
+  "csItemC2 csItemC2"
+  "csItemD1 csItemD2"
 }
 
 #csGrid3Research {
@@ -503,13 +583,6 @@ ol {
   flex-direction: column;
   row-gap: 2em;
   max-width: 33%;
-}
-
-.caseStudyGrid Li {
-  font-size: calc(1em + 2vh);
-  margin: 0;
-  padding: 0;
-  line-height: 1;
 }
 
 .csHeader { 
@@ -765,6 +838,10 @@ ol {
   justify-content: center;
   width: auto;
   max-height: 70vh;
+}
+
+#fdImagesa3 {
+  padding-top: 3vh;
 }
 
 #fdImagesGV {
@@ -1154,6 +1231,7 @@ a {
   margin-top: 0;
   font-weight: 700;
   cursor: pointer;
+  border-radius: .2em;
 }
 
 #inactive {
@@ -1639,6 +1717,10 @@ a {
     margin-right: 10%;
   }
   
+  .heroImage Img {
+    top: -10vh;
+  }
+
   .aboutContainer {
     margin-left: 10%;
     margin-right: 10%;
@@ -1659,14 +1741,14 @@ a {
   }
 
   .introContainer {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .csHeroItem {
     margin-left: 10%;
     margin-right: 10%;
-    padding-top: 5%;
+    padding-top: 4vh;
   }
 
   .caseStudyGrid {
@@ -1801,6 +1883,7 @@ a {
 
 .fdContainer {
   margin-left: 5%;
+  column-gap: 2vw;
 }
 
 #workItemCopy {
@@ -1836,8 +1919,8 @@ a {
 .aboutContainer {
   display: flex;
   flex-direction: column;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .CompetanciesSlider {
@@ -1944,6 +2027,32 @@ a {
   margin-bottom: 5vh;
 }
 
+#csGrid5a3 {
+  grid-template-rows: unset;
+  grid-template-areas: 
+    "csHeader"
+    "csItemA1"
+    "csItemB1"
+    "csItemB2"
+}
+
+#csGrid5a3Prototyping {
+  grid-template-rows: unset;
+  grid-template-areas:
+  "csHeader"
+  "csItemA2"
+  "csItemB1"
+  "csItemB2"
+  "csItemC1"
+  "csItemC2"
+  "csItemD1"
+  "csItemD2"
+}
+
+.caseStudyGrid > h6 {
+  line-height: 2em;
+}
+
 .csItemA1 {
 
 }
@@ -1986,87 +2095,88 @@ a {
 
 .caseStudyGrid {
   display: grid;
-  grid-template-columns: 2.5% 1fr 2.5%;
+  grid-template-columns: 1fr;
   grid-template-rows: auto auto auto auto auto auto auto auto auto;
-  margin-bottom: 5vh;
+  margin-right: 5%;
+  margin-left: 5%;
   row-gap: 3vh;
   grid-auto-flow: column;
   grid-template-areas:
-    "csHeader csHeader csHeader"
-    ". csItemA1 ."
-    ". csItemA2 ."
-    ". csItemB2 ."
-    ". csItemB1 ."
-    ". csItemC1 ."
-    ". csItemC2 ."
-    ". csItemD2 ."
-    ". csItemD1 .";
+    "csHeader"
+    "csItemA1"
+    "csItemA2"
+    "csItemB2"
+    "csItemB1"
+    "csItemC1"
+    "csItemC2"
+    "csItemD2"
+    "csItemD1";
 }
 
 #csGrid3 {
   grid-template-rows: auto auto auto auto auto auto auto;
   grid-template-areas:
-    "csHeader csHeader csHeader"
-    ". csItemA1 ." 
-    ". csItemA2 ."
-    ". csItemB2 ."
-    ". csItemB1 ."
-    ". csItemC1 ."
-    ". csItemC2 .";
+    "csHeader"
+    "csItemA1" 
+    "csItemA2"
+    "csItemB2"
+    "csItemB1"
+    "csItemC1"
+    "csItemC2";
 }
 
 #csGrid5 {
   grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
   grid-template-areas:
-  "csHeader csHeader csHeader"
-  ". csItemA2 ."
-  ". csItemA1 ."
-  ". csItemB1 ."
-  ". csItemC2 ."
-  ". csItemC1 ."
-  ". csItemD2 ."
-  ". csItemD1 ."
-  ". csItemE1 ."
-  ". csItemE2 .";
+  "csHeader"
+  "csItemA2"
+  "csItemA1"
+  "csItemB1"
+  "csItemC2"
+  "csItemC1"
+  "csItemD2"
+  "csItemD1"
+  "csItemE1"
+  "csItemE2";
 }
 
 #csGrid3Research {
   grid-template-rows: auto auto auto auto auto auto auto auto;
   grid-template-areas:
   "csHeader csHeader csHeader"
-  ". csItemA2 ."
-  ". csItemA1 ."
-  ". csItemB1 ."
-  ". csItemB2 ."
-  ". csItemC2 ."
-  ". csItemC1 ."
-  ". csItemD1 ."
-  ". csItemD2 .";
+  "csItemA2"
+  "csItemA1"
+  "csItemB1"
+  "csItemB2"
+  "csItemC2"
+  "csItemC1"
+  "csItemD1"
+  "csItemD2";
 }
 
 #csGrid3ResearchGV {
   grid-template-rows: auto 1fr 1fr auto auto 1fr auto auto;
   grid-template-areas:
-  "csHeader csHeader csHeader"
-  ". csItemA2 ."
-  ". csItemA1 ."
-  ". csItemB1 ."
-  ". csItemB2 ."
-  ". csItemC2 ."
-  ". csItemC1 ."
-  ". csItemD1 ."
-  ". csItemD2 .";
+  "csHeader"
+  "csItemA2"
+  "csItemA1"
+  "csItemB1"
+  "csItemB2"
+  "csItemC2"
+  "csItemC1"
+  "csItemD1"
+  "csItemD2";
 }
 
 #csGrid5gvIdeation {
   grid-template-rows: auto auto auto auto auto auto;
   grid-template-areas:
-  "csHeader csHeader csHeader"
-  ". csItemA2 ."
-  ". csItemA1 ."
-  ". csItemB1 ."
-  ". csItemB2 ."
-  "csHeaderDup csHeaderDup csHeaderDup";
+  "csHeader"
+  "csItemA2"
+  "csItemA1"
+  "csItemB1"
+  "csItemB2"
+  "csHeaderDup";
 }
 
 .csGVcontainer {
@@ -2116,25 +2226,25 @@ a {
 #csGrid5GVPrototyping {
   grid-template-rows: auto auto auto auto auto auto 1fr;
   grid-template-areas:
-  "csHeader csHeader csHeader"
-  ". csItemA1 ."
-  ". csItemA2 ."
-  ". csItemB1 ."
-  ". csItemB2 ."
-  ". csItemC2 ."
-  ". csItemC1 .";
+  "csHeader"
+  "csItemA1"
+  "csItemA2"
+  "csItemB1"
+  "csItemB2"
+  "csItemC2"
+  "csItemC1";
 }
 
 #csGrid5GVBias {
   grid-template-rows: auto auto auto auto auto auto 1fr;
   grid-template-areas:
-  "csHeader csHeader csHeader"
-  ". csItemA2 ."
-  ". csItemA1 ."
-  ". csItemB2 ."
-  ". csItemB1 ."
-  ". csItemC1 ."
-  ". csItemC2 ."
+  "csHeader"
+  "csItemA2"
+  "csItemA1"
+  "csItemB2"
+  "csItemB1"
+  "csItemC1"
+  "csItemC2"
 }
 
 #csGrid5GVBias li {
@@ -2231,16 +2341,16 @@ a {
 
 .introContainer {
   display: grid;
-  grid-template-columns: 5% 1fr 5%;
+  grid-template-columns: 1fr;
   grid-template-rows: auto auto .6fr;
   padding-top: 3%;
   padding-bottom: 3%;
   gap: 10px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    ". heroImage ."  
-    ". projectOverview ."
-    ". roleScope .";
+    "heroImage"  
+    "projectOverview"
+    "roleScope";
 }
 
 .heroImage { 
@@ -2265,7 +2375,6 @@ a {
 
 .csHeroItem {
   padding-bottom: 7%;
-  padding-left: 5%;
 }
 
 .h1Time {
@@ -2364,6 +2473,7 @@ a {
 
 .fdImagesEncore img {
   max-height: 320px;
+  align-self: center;
 }
 
 .fdHeaderEncore {
