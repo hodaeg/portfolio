@@ -411,7 +411,7 @@ ol {
 
 .problemStatement {
   padding-top: 2vh;
-  padding-bottom: 2vh;
+  padding-bottom: 4vh;
   padding-right: 4vh;
   padding-left: 4vh;
   background-color: #d7e5ef;
@@ -443,13 +443,18 @@ ol {
   font-size: calc(1em + .7vw);
 }
 
-.problemStatement > h2 {
+.problemStatement > h3 {
   text-decoration:underline;
   text-decoration-thickness:3px;
 }
 
 .problemStatement > h3 {
   font-weight: 400;
+  line-height: 1.5;
+}
+
+.problemStatement > p {
+  font-weight: 500;
 }
 
 .caption {
