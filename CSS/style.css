@@ -1,6 +1,6 @@
 @font-face {
-    font-family: TimeMachine;
-    src: url(../TimeMachine.otf);
+    font-family: CocoHeavy;
+    src: url(../Coco-Sharp-Heavy.otf);
 }
 
 html {
@@ -269,7 +269,7 @@ ol {
 }
 
 .h1Time {
-  font-family: TimeMachine;
+  font-family: CocoHeavy;
   font-size: calc(1em + 10vw);
   line-height: 1;
   color:#DD0000;
@@ -2031,7 +2031,6 @@ a {
 }
 
 .CompetanciesSlider {
-  justify-content: center;
   width: unset;
 }
 .competanciesSliderItems {
@@ -2040,7 +2039,7 @@ a {
 }
 
 .competanciesList {
-  margin-right: 10%;
+  margin-right: 5%;
 }
 
 .timelineContainer {
@@ -2052,11 +2051,6 @@ a {
 .aboutSkills {
   margin-bottom: 5vh;
   margin-top: 2vh;
-}
-
-.Competancies {
-  margin: 0% 0% 15% 0%;
-  padding: 0;
 }
 
 .contactPage {
@@ -2586,7 +2580,7 @@ a {
 .aboutHeroText {
   margin-left: 5%;
   margin-right: 5%;
-  width: 340px;
+  width: unset;
 }
 
 .maxHeight500 {
