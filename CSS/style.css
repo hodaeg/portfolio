@@ -1,7 +1,18 @@
 @font-face {
     font-family: CocoHeavy;
-    src: url(../Coco-Sharp-Heavy.otf);
+    src: url(../Coco-Sharp-Extrabold.ttf);
 }
+
+@font-face {
+  font-family: CocoBold;
+  src: url(../Coco-Sharp-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
 
 html {
   scroll-behavior: smooth;
@@ -30,7 +41,7 @@ body {
     background-position: top;
     background-size: cover;
     background-repeat: repeat-y;
-    font-family: 'Darker Grotesque', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     margin: 0;
     padding: 0;
     animation: fadeInAnimation ease 1.5s;
@@ -52,7 +63,7 @@ nav {
   position: sticky;
   top: 0px;
   display: flex;
-  font-family: 'Darker Grotesque', sans-serif;
+  font-family: 'CocoBold', sans-serif;
   overflow: none;
   margin: auto;
   justify-content: space-between;
@@ -102,10 +113,9 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-family: Darker Grotesque;
-    font-weight: 300;
+    font-weight: 200;
     color: #454545;
-    font-size: calc(1em + 2vw);
+    font-size: calc(1em + 1vw);
     cursor: pointer;
     line-height: 1;
     margin-bottom: 1%;
@@ -120,10 +130,10 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-family: Darker Grotesque;
-  font-weight: 300;
+  font-family: CocoBold;
+  font-weight: 200;
   color: white;
-  font-size: calc(1em + 2vw);
+  font-size: calc(1em + 1vw);
   cursor: pointer;
   line-height: 1;
   margin-bottom: 1%;
@@ -272,7 +282,9 @@ ol {
   font-family: CocoHeavy;
   font-size: calc(1em + 10vw);
   line-height: 1;
-  color:#DD0000;
+  background: linear-gradient(76deg, rgba(255,45,45,1) 0%, rgba(91,0,0,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-align: center;
 }
 
@@ -1068,16 +1080,72 @@ ol {
   padding-bottom: 10%;
 }
 
-.heroContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 8%;   
-    margin: auto;
-    max-width: 1100px;
-    height: 100%;
-    margin-bottom: 5%;
+.landingContainer {
+  display: flex;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  justify-content: space-between;
 }
+
+.heroContainer {
+    width: 60%;
+}
+
+.heroNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.heroNavItem {
+  width: 350px;
+  padding-block: 1.5em;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #DBDBDB;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.05), inset 0px 0px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 14px;
+  padding-left: 1.5em;
+}
+
+.heroNavItem :hover {
+  border: 1px solid #d84a4a;
+}
+
+
+
+.heroNavItem h3 {
+  font-size: 2em;
+  line-height: 1;
+  background: linear-gradient(76deg, rgb(233, 45, 45) 0%, rgb(176, 22, 22) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: none;
+  border: none!important;
+}
+
+.heroNavItem p {
+  font-size: 1em;
+  line-height: 2;
+  color: #757575;
+  border: none!important;
+}
+
+.heroNavItemTitle {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  border: none!important;
+}
+
+.heroNavItemTitle i {
+  color: #757575;
+  font-size: 1.5em;
+  border: none!important;
+}
+
+.heroNavItemTitle {}
 
 #orangeDark {
   color: #FF3D00;
@@ -1174,12 +1242,6 @@ ol {
     background-color:#DD0000;
 }
 
-.heroItems {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .aboutItems {
     display: flex;
     flex-direction: row;
@@ -1187,7 +1249,7 @@ ol {
 }
 
 h1 {
-    font-family: Darker Grotesque;
+    font-family: CocoHeavy;
     color: #DD0000;
     margin: 0;
     font-size: calc(1em + 5vw);
@@ -1238,13 +1300,11 @@ p {
 }
 
 #subtitle {
-    font-size: 4vw;
-    margin-top: 4%;
+  font-size: 2em;  
+  margin-top: 4%;
     color: #454545;
-    line-height: .8;
     font-weight: 500;
-    -webkit-animation: slide-in-bck-bottom 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) 1s both;
-    animation: slide-in-bck-bottom 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) 1s both;
+    line-height: 1.3em;
 }
 
 #subtitleWork {
@@ -1263,14 +1323,13 @@ p {
 }
 
 .footerContainer {
-    display: flex;
+  background-color: #ffffffd1;  
+  bottom: 0px;
     width: 100%;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
-    margin:0;
-    bottom: 2vh;
-    position: relative;
+    position: absolute;
+    padding-block: 2vh;
+    border-top: 1px solid #75757532;
 }
 
 #footerContact {
@@ -1294,6 +1353,9 @@ p {
     padding: 0;
     margin: 0;
     text-align: center;
+    color: #a8a8a8;
+    font-weight: 100;
+    font-size: 1.6em;
 }
 
 #red {
