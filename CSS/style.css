@@ -12,8 +12,6 @@
   font-family: 'Noto Sans', sans-serif;
 }
 
-
-
 html {
   scroll-behavior: smooth;
 }
@@ -121,8 +119,8 @@ nav {
     margin-bottom: 1%;
 }
 
-#footerContainerContact {
-  position: absolute;
+#footerContainerScroll {
+  position: relative;
   bottom: 2vh;
 }
 
@@ -286,6 +284,25 @@ ol {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
+}
+
+.h1TimeAbout {
+  font-family: CocoHeavy;
+  font-size: calc(1em + 6vw);
+  line-height: 1;
+  background: linear-gradient(76deg, rgba(255,45,45,1) 0%, rgba(91,0,0,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.h1TimeContact {
+  font-family: CocoHeavy;
+  font-size: calc(1em + 6vw);
+  line-height: 1;
+  background: linear-gradient(76deg, rgba(255,45,45,1) 0%, rgba(91,0,0,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .csHeroItem h1 {
@@ -1085,7 +1102,7 @@ ol {
   max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5%;
+  margin-top: 15vh;
   justify-content: space-between;
 }
 
@@ -1109,10 +1126,19 @@ ol {
   padding-left: 1.5em;
 }
 
-.heroNavItem :hover {
-  border: 1px solid #d84a4a;
+.heroNavItem:hover {
+  transition: .5s;
+  border: 1px solid rgb(233, 45, 45);
+  transform: translateX(5px);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.10), inset 0px 0px 15px rgba(0, 0, 0, 0.10);
+  background: rgba(255, 255, 255, 0.729);
 }
 
+.heroNavItem:hover i {
+  transition: .5s;
+  color: rgb(233, 45, 45);
+  transform: translateX(10px);
+}
 
 
 .heroNavItem h3 {
@@ -1122,27 +1148,24 @@ ol {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border: none;
-  border: none!important;
 }
 
 .heroNavItem p {
   font-size: 1em;
   line-height: 2;
   color: #757575;
-  border: none!important;
 }
 
 .heroNavItemTitle {
   display: flex;
   align-items: center;
   column-gap: 20px;
-  border: none!important;
+
 }
 
 .heroNavItemTitle i {
   color: #757575;
   font-size: 1.5em;
-  border: none!important;
 }
 
 .heroNavItemTitle {}
@@ -1264,14 +1287,14 @@ h2 {
 }
 
 h6 {
-  font-size: calc(1em + 1.5vw);
+  font-size: calc(1em + 1vw);
   margin: 0;
   padding: 0;
   line-height: 1;
 }
 
 h3 {
-  font-size: calc(1em + 2vw);
+  font-size: calc(1em + 1.5vw);
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -1282,6 +1305,7 @@ h4 {
   margin: 0;
   padding: 0;
   line-height: 1;
+  font-weight: 500;
 }
 
 h5 {
@@ -1293,10 +1317,12 @@ h5 {
 }
 
 p {
-  font-size: calc(1em + 1.1vw);
+  font-size: calc(1em + .9vw);
   margin: 0;
   padding: 0;
-  line-height: 1;
+  line-height: 1.1;
+  color: #373737;
+  font-weight: 300;
 }
 
 #subtitle {
@@ -1332,11 +1358,14 @@ p {
     border-top: 1px solid #75757532;
 }
 
-#footerContact {
-  display: flex;
-  width: 30vw;
-  margin-bottom: 2%;
-  min-width: 216px;
+.footerContainerScroll {
+  background-color: #ffffffd1;  
+  bottom: 0px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding-block: 2vh;
+    border-top: 1px solid #75757532;
 }
 
 #workItemCopy {
@@ -1353,20 +1382,14 @@ p {
     padding: 0;
     margin: 0;
     text-align: center;
-    color: #a8a8a8;
-    font-weight: 100;
+    color: #7f7f7f;
+    font-weight: 200;
     font-size: 1.6em;
 }
 
 #red {
     color: #DD0000;
     font-weight: bolder;
-}
-
-#footerLink {
-    margin-bottom: 10px;
-    width: 30vw;
-    min-width: 216px;
 }
 
 a {
@@ -1469,6 +1492,9 @@ a {
 
 .Contact-Copy { 
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
 }
 
 #contactButtonRight {
@@ -1591,6 +1617,7 @@ a {
     gap: 0px 0px;
     margin: auto;
     max-width: 1100px;
+    margin-top: 6vh;
   }
   
   .aboutIntroContainer { grid-area: 1 / 1 / 2 / 3; }
@@ -1600,18 +1627,27 @@ a {
     justify-content: center;
     align-items: center;
     margin-bottom: 10vh;
-    margin-top: 12vh;
+    margin-top: 2vh;
+  }
+
+  .aboutSkills H3,H4,H5 {
+    color:#454545;
   }
   
   .aboutCopy { 
     grid-area: 1 / 1 / 2 / 2;
-    padding: 5% 10% 5% 0%;
+    padding: 0% 10% 5% 0%;
+  }
+
+  .aboutCopy h1 {
+    text-align: left;
   }
 
 
   .Competancies { 
     grid-area: 2 / 1 / 3 / 3;
     margin-bottom: 5%;
+    min-height: 400px;
   }
   
   .skillsContainer {
@@ -1633,6 +1669,8 @@ a {
     display: flex;
     flex-direction: column;
     margin-left: .5vw;
+    row-gap: .5vh;
+    justify-content: center;
   }
   
   #skillHeader{
@@ -1693,6 +1731,10 @@ a {
     flex-wrap: wrap;
   }
 
+  .competanciesList h4 {
+    color: white;
+  }
+
   .definition {
 
   }
@@ -1719,7 +1761,7 @@ a {
   .aboutHeroText {
     width: 100%;
     text-align: center;
-    background-color: #DD0000;
+    background: linear-gradient(76deg, rgba(255,45,45,1) 0%, rgba(91,0,0,1) 100%);
     padding-top: 3vh;
     padding-bottom: 3vh;
     margin-bottom: 10vh;
@@ -1747,6 +1789,7 @@ a {
     display: flex;
     flex-direction: column;
     margin-left: 3vw;
+    row-gap: 1vh;
   }
 
   .timelineBullet {
@@ -2133,11 +2176,6 @@ a {
   padding-top: 5%;
   padding-bottom: 5%;
   margin-bottom: 0%;
-}
-
-#footerContainerContact {
-  position: absolute;
-  bottom: 0px;
 }
 
 #footer {
@@ -2727,6 +2765,10 @@ ol {
 
 ul {
   font-weight: 500;
+}
+
+.heroNav {
+  
 }
 
 }
