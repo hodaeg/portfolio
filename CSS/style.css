@@ -954,6 +954,11 @@ ol {
   column-gap: 1vh;
 }
 
+.screenshot {
+  max-width: 200px;
+  height: auto;
+}
+
 .descriptionContainer {
   display: flex;
   flex-direction: column;
@@ -1685,12 +1690,13 @@ a {
 }
 
 #inactive {
-  border: .2em solid #757575;
-  color: #757575;
+  margin-top: 1em;
+  background-color:#e1e1e1;
+  border: .1em solid #757575;
+  color: #4e4e4e;
 }
 
 #inactive:hover {
-  background: none;
   color: none;
   transition: none;
 }
@@ -3173,6 +3179,17 @@ ul {
 
 .h1TimeNav {
   padding-left: 4%;
+}
+
+.csHeroContainer h1 {
+  font-size: 2em;
+  line-height: 1.5;
+}
+
+.footerContainerScroll {
+  padding-block: unset;
+  padding-bottom: 3em;
+  padding-top: 1em;
 }
 
 @media only screen and (max-height: 668px) {
