@@ -1578,6 +1578,7 @@ p {
     text-align: center;
     padding-block: 2vh;
     border-top: 1px solid #75757532;
+    margin-top: 3vh;
 }
 
 #workItemCopy {
